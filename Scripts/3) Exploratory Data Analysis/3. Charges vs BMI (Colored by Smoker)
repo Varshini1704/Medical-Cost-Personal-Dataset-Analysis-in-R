@@ -1,0 +1,15 @@
+#SCATTER PLOT
+
+ggplot(df, aes(x = bmi, y = charges, color = smoker)) +
+#Creates a scatter plot using data from df.
+#x = bmi: Body Mass Index on the x-axis.
+#y = charges: Medical charges on the y-axis.
+#color = smoker: Points will be colored differently depending on whether the person is a smoker or not.
+
+  geom_point(alpha = 0.6) +
+#Adds scatter plot points.
+#alpha = 0.6 makes points semi-transparent (60% opacity), which helps when points overlap.
+
+  labs(title = "BMI vs Charges by Smoking Status")
+#Adds a title to the plot.
+#Axis labels default to the variable names (bmi and charges).

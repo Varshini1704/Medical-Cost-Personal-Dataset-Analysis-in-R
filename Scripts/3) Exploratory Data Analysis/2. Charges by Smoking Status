@@ -1,0 +1,17 @@
+#BOX PLOT
+
+ggplot(df, aes(x = smoker, y = charges, fill = smoker)) +
+#This starts a plot using your dataframe df.
+#x = smoker: The x-axis will show the variable smoker.
+#y = charges: The y-axis shows the charges variable.
+#fill = smoker: The color fill inside the boxplots will be based on the smoking status, so each boxplot will be colored differently according to smoker/non-smoker.
+
+  geom_boxplot() +
+#This adds boxplots to the plot.
+#Each boxplot summarizes the distribution of charges for each category of smoker.
+#A boxplot shows the median, quartiles, and potential outliers.
+
+  labs(title = "Charges by Smoking Status", y = "Charges")
+#Adds the title: "Charges by Smoking Status"
+#Labels the y-axis as "Charges"
+#No label specified for the x-axis, so it defaults to smoker.

@@ -1,0 +1,9 @@
+Mean Absolute Error: 4293.78 
+R-squared (on training): 0.76 
+
+INTERPRETATIONS:
+
+# A multiple linear regression model was trained.
+# Smoking and age were most impactful predictors.
+# The model explains 76% of the variation in medical charges. This is a strong R².
+# The model explained a large portion of charge variation, but there is still room for improvement, especially for high-cost patients.

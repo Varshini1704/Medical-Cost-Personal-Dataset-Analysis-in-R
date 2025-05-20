@@ -1,0 +1,27 @@
+Distribution of Medical Charges
+
+Interpretation:
+# The distribution is right-skewed.
+# Most patients have charges below $20,000.
+# A few cases with very high charges (> $50,000), likely due to serious health conditions.
+
+Charges by Smoking Status
+
+Interpretation:
+# Smokers have much higher median charges than non-smokers.
+# Also show wider range (greater variability in costs).
+# Smoking is a strong indicator of higher medical expenses.
+
+Charges vs BMI (by Smoking Status)
+
+Interpretation:
+# For non-smokers, charges increase gradually with BMI.
+# For smokers, charges spike at high BMI values.
+# Smokers with high BMI are likely among the costliest patients.
+
+Correlation Matrix
+
+Interpretation:
+# Age, BMI, and smoking show positive correlation with charges.
+# Smoker has the strongest correlation with higher medical charges.
+

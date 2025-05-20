@@ -1,0 +1,23 @@
+#CORRELATION MATRIX
+# Encode categorical variables for correlation
+
+df_numeric <- df %>%
+  mutate(sex = as.numeric(sex),
+         smoker = as.numeric(smoker),
+         region = as.numeric(region))
+#Creating a new dataframe df_numeric based on df.
+#Using mutate(), convert categorical variables into numeric values.
+#as.numeric() transforms factor or character variables into numbers.
+#This step is necessary because correlation calculations require numeric data.
+
+corr_matrix <- cor(df_numeric)
+#Calculates the correlation matrix of the numeric dataframe.
+#This matrix shows the pairwise correlation coefficients between all variables.
+
+corrplot(corr_matrix, method = "color", type = "upper", tl.col = "black", addCoef.col = "black")
+#Uses the corrplot package to visualize the correlation matrix.
+#method = "color" displays correlations as colored tiles (gradient colors represent the strength and direction of correlation).
+#type = "upper" shows only the upper triangle of the matrix (since it's symmetric, this avoids redundancy).
+#tl.col = "black" colors the text labels (variable names) in black.
+#addCoef.col = "black" adds the numeric correlation coefficients on the plot in black font.
+
